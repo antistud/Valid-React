@@ -65,7 +65,7 @@ const Home = (props) => {
                 href="https://dribbble.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link1"
+                className="home-link01"
               >
                 <div className="home-container04">
                   <svg
@@ -80,7 +80,7 @@ const Home = (props) => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link2"
+                className="home-link02"
               >
                 <div className="home-container05">
                   <svg
@@ -95,7 +95,7 @@ const Home = (props) => {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link3"
+                className="home-link03"
               >
                 <div className="home-container06">
                   <svg viewBox="0 0 1024 1024" className="home-icon08">
@@ -173,7 +173,7 @@ const Home = (props) => {
               href="https://calendly.com/_valid/30min"
               target="_blank"
               rel="noreferrer noopener"
-              className="home-link4"
+              className="home-link04"
             >
               <PrimaryButton
                 button="Get Started"
@@ -294,7 +294,7 @@ const Home = (props) => {
           href="https://calendly.com/_valid/30min"
           target="_blank"
           rel="noreferrer noopener"
-          className="home-link5 button"
+          className="home-link05 button"
         >
           Care Provider
         </a>
@@ -302,7 +302,7 @@ const Home = (props) => {
           href="https://calendly.com/_valid/30min"
           target="_blank"
           rel="noreferrer noopener"
-          className="home-link6 button"
+          className="home-link06 button"
         >
           Developer
         </a>
@@ -324,7 +324,7 @@ const Home = (props) => {
                 href="https://www.instagram.com/project_valid/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link7"
+                className="home-link07"
               >
                 <div className="home-container20">
                   <svg
@@ -339,13 +339,25 @@ const Home = (props) => {
                 href="https://www.linkedin.com/search/results/all/?keywords=%23project_valid"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link8"
+                className="home-link08"
               >
                 <div className="home-container21">
                   <svg viewBox="0 0 1024 1024" className="home-icon12">
                     <path d="M384 384h177.106v90.782h2.532c24.64-44.194 84.958-90.782 174.842-90.782 186.946 0 221.52 116.376 221.52 267.734v308.266h-184.61v-273.278c0-65.184-1.334-149.026-96.028-149.026-96.148 0-110.82 70.986-110.82 144.292v278.012h-184.542v-576z"></path>
                     <path d="M64 384h192v576h-192v-576z"></path>
                     <path d="M256 224c0 53.019-42.981 96-96 96s-96-42.981-96-96c0-53.019 42.981-96 96-96s96 42.981 96 96z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a
+                href="https://nimble-juniper-1b9.notion.site/Project_Valid-936b40a15c9141d499b00298635abdbf?pvs=4"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link09"
+              >
+                <div className="home-container22">
+                  <svg viewBox="0 0 1024 1024" className="home-icon16">
+                    <path d="M682 470l-298 170v-342zM896 726v-512h-768v512h768zM896 128q36 0 61 25t25 61l-2 512q0 34-25 59t-59 25h-214v86h-340v-86h-214q-36 0-61-24t-25-60v-512q0-36 25-61t61-25h768z"></path>
                   </svg>
                 </div>
               </a>
