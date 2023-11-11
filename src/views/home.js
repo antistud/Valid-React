@@ -113,28 +113,21 @@ const Home = (props) => {
           <div className="home-container07">
             <p className="home-text06">
               <span>Elimi</span>
-              <span>
-                nate
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
+              <span>nate</span>
               <br></br>
               <span>
-                the cost of
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
                   }}
                 />
               </span>
+              <span>the cost</span>
               <br></br>
               <span>denied insurance</span>
               <br></br>
             </p>
-            <span className="home-text14">
+            <span className="home-text15">
               <span>
                 Valid makes
                 <span
@@ -143,7 +136,7 @@ const Home = (props) => {
                   }}
                 />
               </span>
-              <span className="home-text16">healthcare</span>
+              <span className="home-text17">healthcare</span>
               <span>
                 {' '}
                 more affordable for everyone
@@ -153,7 +146,6 @@ const Home = (props) => {
                   }}
                 />
               </span>
-              <br></br>
               <span>by </span>
               <span className="home-text20">
                 eliminating
