@@ -122,7 +122,7 @@ const Home = (props) => {
                   }}
                 />
               </span>
-              <span>the cost</span>
+              <span>the cost of</span>
               <br></br>
               <span>denied insurance</span>
               <br></br>
