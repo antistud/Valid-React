@@ -11,7 +11,19 @@ const Home = (props) => {
     <div className="home-container">
       <Helmet>
         <title>Valid</title>
+        <meta
+          name="description"
+          content="Valid accelerates insurance for care providers by offering real-time verifications"
+        />
         <meta property="og:title" content="Valid" />
+        <meta
+          property="og:description"
+          content="Valid accelerates insurance for care providers by offering real-time verifications…… So that they can get paid quicker and eliminate the threat of denied claims.  "
+        />
+        <meta
+          property="og:image"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/1ef9a349-793c-4823-9c78-8b3c736f0b8b/64af6848-9be9-4c98-87ff-6bc1ad13894f?org_if_sml=1&amp;force_format=original"
+        />
       </Helmet>
       <div data-role="Header" className="home-header-container">
         <header className="home-header">
