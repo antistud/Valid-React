@@ -133,11 +133,19 @@ const Home = (props) => {
               </span>
               <br></br>
               <span className="home-text18">Valid </span>
-              <span className="home-text19">
-                makes healthcare more affordable for everyone by eliminating
-                denied claims for care providers
-              </span>
+              <span className="home-text19">accelerates insurance</span>
               <br className="home-text20"></br>
+              <span className="home-text21">
+                by eliminating the threat denied claims
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
+              <br className="home-text22"></br>
+              <span className="home-text23">for care providers</span>
+              <br className="home-text24"></br>
               <br></br>
             </span>
             <a
@@ -166,8 +174,8 @@ const Home = (props) => {
         />
       </div>
       <div className="home-features">
-        <h2 className="Headline2 home-text22">Insurance Done Better</h2>
-        <span className="home-text23">
+        <h2 className="Headline2 home-text26">Insurance Done Better</h2>
+        <span className="home-text27">
           <span>
             Discover how Valid can revolutionize insurance verification for your
             healthcare organization or practice.
@@ -218,8 +226,8 @@ const Home = (props) => {
             <img alt="image" src="/4-300h.png" className="home-image3" />
           </div>
           <div className="home-container09">
-            <h3 className="home-text26">Built for Confidence</h3>
-            <span className="home-text27">
+            <h3 className="home-text30">Built for Confidence</h3>
+            <span className="home-text31">
               Unlike other solutions that offer a best guess on coverage, Valid
               offers 100% confidence in your verifications through data that’s
               pulled directly from the payer portal to eliminate any doubt.
@@ -233,8 +241,8 @@ const Home = (props) => {
           <img alt="image" src="/1-300h.png" className="home-image4" />
         </div>
         <div className="home-container12">
-          <h3 className="home-text28 Headline3">Safe and Secure</h3>
-          <span className="home-text29">
+          <h3 className="home-text32 Headline3">Safe and Secure</h3>
+          <span className="home-text33">
             Valid offers complete HIPAA🔒 compliant health insurance
             infrastructure to spin up your Healthcare app quickly – think of
             Valid as the fasted and easiest way to start collecting insurance
@@ -247,8 +255,8 @@ const Home = (props) => {
           <img alt="image" src="/2-300h.png" className="home-image5" />
         </div>
         <div className="home-container14">
-          <h3 className="home-text30 Headline3">Real-Time</h3>
-          <span className="home-text31">
+          <h3 className="home-text34 Headline3">Real-Time</h3>
+          <span className="home-text35">
             Real-time verification offers immediate and accurate access to
             patient coverage information, vastly outpacing the inefficiencies
             and delays associated with manual verification processes.
@@ -257,7 +265,7 @@ const Home = (props) => {
       </div>
       <div className="home-feature2">
         <div className="home-container15">
-          <h2 className="home-text32 Headline2">Get Started</h2>
+          <h2 className="home-text36 Headline2">Get Started</h2>
         </div>
       </div>
       <div className="home-container16">
@@ -287,7 +295,7 @@ const Home = (props) => {
           />
           <div className="home-divider"></div>
           <div className="home-container18">
-            <span className="home-text33 Body2">
+            <span className="home-text37 Body2">
               © 2022 VALID DOT CARE, Inc
             </span>
             <div className="home-container19">
