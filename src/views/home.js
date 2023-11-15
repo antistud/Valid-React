@@ -145,10 +145,10 @@ const Home = (props) => {
               </span>
               <br></br>
               <span className="home-text18">Valid </span>
-              <span className="home-text19">accelerates insurance</span>
+              <span className="home-text19">accelerates insurance by</span>
               <br className="home-text20"></br>
               <span className="home-text21">
-                by eliminating the threat denied claims
+                eliminating the threat of denied claims
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
