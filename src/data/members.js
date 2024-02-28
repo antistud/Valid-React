@@ -8,6 +8,7 @@ const members = {
         vCard: '/jon_vcard.vcf',
         calendly: 'https://calendly.com/_valid',
         mobile: '(402)410-1380',
+        linkedIn: 'https://www.linkedin.com/in/jon-rhoades/',
     },
 }
 
