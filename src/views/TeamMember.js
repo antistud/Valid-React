@@ -184,40 +184,38 @@ const TeamMember = (props) => {
 
             </div>
             <br></br>
-            <div style={{ display: "flex" }} >
-              {member.vCard && (
-                <div style={{ padding: 4 }}>
-                  <a
-                    href={member.vCard}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-link04"
-                  >
-                    <PrimaryButton
-                      button="📱 Add to Contacts"
-                      className="home-component"
-                    ></PrimaryButton>
-                  </a>
-                </div>
-              )}
-              {member.calendly && (
-                <div style={{ padding: 4 }}>
-                  <a
-                    href={member.calendly}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-link04"
-                  >
-                    <SecondaryButton
-                      button="🗓️ Schedule a Meeting"
-                      className="home-component"
-                    ></SecondaryButton>
-                  </a>
-                </div>
-              )}
 
-            </div>
-
+            {member.vCard && (
+              <div style={{ padding: 4 }}>
+                <a
+                  href={member.vCard}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link04"
+                >
+                  <PrimaryButton
+                    width="100%"
+                    button="📱 Add to Contacts"
+                    className="home-component"
+                  ></PrimaryButton>
+                </a>
+              </div>
+            )}
+            {member.calendly && (
+              <div style={{ padding: 4 }}>
+                <a
+                  href={member.calendly}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link04"
+                >
+                  <SecondaryButton
+                    button="🗓️ Schedule a Meeting"
+                    className="home-component"
+                  ></SecondaryButton>
+                </a>
+              </div>
+            )}
           </div>
 
 
