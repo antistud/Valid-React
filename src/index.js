@@ -15,10 +15,17 @@ import TeamMember from './views/TeamMember'
 import QrCode from './views/QrCode'
 
 const App = () => {
+
+  let hostname = window.location.hostname;
+
   return (
     <Router>
       <Switch>
-        <Route component={Home} exact path="/" />
+        {!hostname.includes("valid.health") ? (
+          <Route component={Home} exact path="/" />
+        ) : (
+          <Route component={Home1} exact path="/" />
+        )}
         <Route component={Home1} exact path="/home1" />
         <Route component={TeamMember} exact path="/team/:name" />
         <Route component={QrCode} exact path="/code/:name" />
