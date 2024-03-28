@@ -161,6 +161,14 @@ const Home = (props) => {
           className="home-purple-circle"
         />
       </div>
+      <div
+        style={{
+          zIndex: 100
+        }}
+      >
+
+
+      </div>
       <div className="home-features">
         <h2 className="Headline2 home-text26">Intake Done Better</h2>
         <span className="home-text27">

@@ -1,0 +1,740 @@
+<style type="text/css">
+  /* COMMON STYLES */
+  :root,
+  html {
+    font-size: 10px;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #edf1f4;
+    font-size: 15px;
+  }
+  ul,
+  ol {
+    list-style-position: inside;
+  }
+  textarea,
+  input[type="text"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="date"] {
+    -webkit-appearance: none;
+  }
+  .link {
+    color: #1980d8;
+    cursor: pointer;
+  }
+  .cP {
+    cursor: pointer;
+  }
+  .flex-center-v {
+    display: flex;
+    align-items: center;
+  }
+  /* COMMON STYLES */
+  .wf-form-component {
+    padding: 30px 40px 60px;
+  }
+  .wf-form-paid {
+    padding-bottom: 45px;
+  }
+  .wf-parent {
+    padding: 30px 0;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  .wf-wrapper * {
+    box-sizing: border-box;
+  }
+  .wf-wrapper {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: auto;
+    border: none;
+    background-color: #fff;
+    color: #222;
+    box-shadow: 0px 0px 2px 0 #00000033;
+  }
+  .iframe-container {
+    height: 100%;
+    width: 100%;
+    border: none;
+    min-height: 365px;
+  }
+  .wf-header {
+    font-size: 22px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    word-break: break-word;
+  }
+  .wf-row {
+    margin-bottom: 25px;
+  }
+  .wf-row:last-child {
+    margin-bottom: 0;
+  }
+  .wf-label {
+    padding: 7px 0;
+    word-break: break-word;
+  }
+  .wf-field {
+    text-align: left;
+    word-break: break-word;
+    border: 0;
+    position: relative;
+  }
+  .wf-field-inner {
+    position: relative;
+    display: flex;
+    flex: 1;
+  }
+  .wf-field-input:focus {
+    border: 1px solid #30c384;
+  }
+  .wf-input-focus.wf-field::after {
+    opacity: 1;
+  }
+  .wf-field-error-active {
+    margin-bottom: -10px;
+  }
+  .wf-input-focus.wf-field::after,
+  .wf-field-error-active.wf-field .wf-field-error {
+    display: block;
+  }
+  .wf-field-error-active.wf-field .wf-field-input {
+    border: 1px solid #fd6b6d;
+    box-shadow: 0 0 1px 1px #f4a2a2;
+  }
+  .wf-field-mandatory .wf-field-inner::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    background-color: #ff6a6a;
+    width: 3px;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+  }
+  .wf-field-input,
+  .wf-field-dropdown {
+    width: 100%;
+    border: 1px solid #bdc8d3;
+    border-radius: 4px;
+    padding: 10px 15px;
+    min-height: 38px;
+    font-size: 15px;
+    font-family: inherit;
+  }
+  select:not([data-wform-field="select-multiple"]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url(\"data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>\");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-color: #fff;
+    min-width: 70px;
+  }
+  input,
+  select {
+    background-color: #fff;
+  }
+  .wf-field-item {
+    min-height: 38px;
+  }
+  .wf-time-field-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  .wf-time-field-wrapper select {
+    margin-left: 10px;
+  }
+  .wf-form-component .wf-field-error,
+  .wf-form-component .wf-field-help-text {
+    text-align: left;
+  }
+  .wf-field-error {
+    color: #ff5050;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  .wf-field-help-text {
+    color: #515159;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .wf-field-help-text-link {
+    text-decoration: none;
+  }
+  .wf-field-checkbox {
+    cursor: pointer;
+    border-radius: 3px;
+    min-width: 14px;
+    min-height: 20px;
+    box-sizing: initial;
+    accent-color: #31c486;
+    margin-right: 10px;
+    margin-bottom: auto;
+  }
+  .wf-field-dropdown-date {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .wf-field-dropdown-date {
+    border: 1px solid #bdc8d3;
+  }
+  .wf-field-dropdown-date:hover {
+    border: 1px solid #65c199;
+  }
+  .wform-field-item-upload-input {
+    min-height: 5rem;
+    background-color: #fbfcfd;
+    border: 1px dashed #bdc8d3;
+    line-height: 2.1;
+    cursor: pointer;
+  }
+  .wform-field-item-upload-input:focus {
+    border: 1px dashed #bdc8d3;
+  }
+  .wform-file-upload-input-label {
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f5f8fa, #ffffff);
+    color: #212129;
+    border-color: #d3dbe3;
+    border: 1px solid #d3dbe3;
+    border-radius: 4px;
+    padding: 0.7rem 2rem;
+    font-size: 1.4rem;
+    right: 1rem;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+  }
+  input[type="file"]::file-selector-button,
+  input[type="file"]::-webkit-file-upload-button {
+    opacity: 0;
+    width: 0;
+    height: 28px;
+  }
+  .wf-row[data-ux-field-appearance="captcha"] .wf-field {
+    display: flex;
+    align-items: center;
+  }
+  .wform-field-item-captcha-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .wf-field-captcha-img-wrap {
+    border: 1px solid #bdc8d3;
+    border-radius: 4px;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: initial;
+    overflow: hidden;
+    min-width: 120px;
+  }
+  .wf-field-captcha-img {
+    height: 38px;
+    width: 100%;
+  }
+  .reload-img {
+    font-size: 23px;
+    color: #4b5569;
+    margin-right: 5px;
+  }
+  .reload-captcha {
+    margin-left: 10px;
+    user-select: none;
+  }
+  .wf-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+  }
+  .wform-btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  .wform-poweredby-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #23384f;
+    font-size: 13px;
+    padding: 6px 8px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  /* ==================== *** Form Alignment *** ==================== */
+  .wf-form-component:not([data-ux-form-alignment="top"]) .wf-row {
+    display: flex;
+  }
+  .wf-form-component:not([data-ux-form-alignment="top"]) .wf-label {
+    word-break: break-word;
+    width: 30%;
+    padding: 1.2rem 2rem 0;
+  }
+  .wf-form-component[data-ux-form-alignment="left"] .wf-label {
+    text-align: left;
+    padding-left: 0;
+  }
+  .wf-form-component[data-ux-form-alignment="right"] .wf-label {
+    text-align: right;
+  }
+  .wf-form-component[data-ux-form-alignment="center"] .wf-label {
+    text-align: center;
+  }
+  .wf-form-component:not([data-ux-form-alignment="top"]) .wf-field {
+    width: 70%;
+  }
+  .wf-form-component[data-ux-form-alignment="top"] .wform-btn-wrap {
+    justify-content: flex-start;
+  }
+  .wf-form-component[data-ux-form-alignment="top"]
+    .wf-label[data-ux-empty-label="true"] {
+    padding: 0;
+  }
+  .wf-form-component[data-ux-form-alignment="top"] .reload-captcha {
+    text-align: right;
+  }
+  .wf-row[data-ux-field-appearance="captcha"] .wf-field-inner {
+    height: 38px;
+  }
+  .wf-row[data-ux-field-appearance="captcha"] .wf-field.wf-field-error-active {
+    flex-wrap: wrap;
+  }
+  .wf-row[data-ux-field-appearance="captcha"] .wf-field-error {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  /* ==================== *** Form Alignment ends *** ==================== */
+
+  /* ==================== *** css animations *** ==================== */
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  /* ==================== *** css animations ends *** ==================== */
+
+  /* ==================== *** Mediaquery *** ==================== */
+  @media screen and (max-width: 1024px) {
+    .wf-wrapper {
+      max-width: 700px;
+      width: calc(100% - 40px);
+      border: 0;
+    }
+    .wf-field input[type="text"],
+    .wf-field select,
+    .wf-field textarea {
+      width: 100% !important;
+    }
+    .wf-label:empty {
+      display: none;
+    }
+    .wf-field-checkbox {
+      min-width: 18px;
+      min-height: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wf-wrapper {
+      max-width: 700px;
+      width: calc(100% - 40px);
+      border: 0;
+    }
+    .wf-field input[type="text"],
+    .wf-field select,
+    .wf-field textarea {
+      width: 100% !important;
+    }
+    .wf-label:empty {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 590px) {
+    .wf-parent {
+      padding: 20px 0;
+    }
+    .wf-wrapper {
+      width: calc(100% - 40px) !important;
+      border: 0;
+    }
+    .wf-form-component {
+      padding: 20px;
+      padding-bottom: 60px;
+    }
+    .wf-field input[type="text"],
+    .wf-field select,
+    .wf-field textarea {
+      width: 100% !important;
+    }
+    .wf-label:empty {
+      display: none;
+    }
+    .wf-row[data-ux-field-appearance="date-time"] .wf-field-inner {
+      flex-direction: column;
+    }
+    .wf-row[data-ux-field-appearance="date-time"] .wf-time-field-wrapper {
+      margin-top: 10px;
+    }
+    .wf-row[data-ux-field-appearance="date-time"] .wf-field-item:first-child {
+      margin-left: 0;
+    }
+    .wf-row[data-ux-field-appearance="date-time"] .wf-field-item {
+      flex: 1;
+    }
+    .wf-row[data-ux-field-appearance="captcha"] .wf-field {
+      flex-direction: column;
+    }
+    .wf-row[data-ux-field-appearance="captcha"] .reload-captcha {
+      margin-left: auto;
+    }
+    .wf-row[data-ux-field-appearance="captcha"] .wf-field-inner {
+      width: 100%;
+    }
+  }
+  /* ==================== *** Mediaquery ends *** ==================== */
+</style>
+<div class="wf-parent" style="background-color: #eaeef2">
+  <div class="wf-wrapper" id="BiginWebToRecordFormDiv6126635000000776029">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <form
+      id="BiginWebToRecordForm6126635000000776029"
+      name="BiginWebToRecordForm6126635000000776029"
+      class="wf-form-component"
+      data-ux-form-alignment="top"
+      style="font-family: Arial; position: relative; font-size: 15px"
+      method="POST"
+      enctype="multipart/form-data"
+      onSubmit='javascript:document.charset="UTF-8"; return validateForm6126635000000776029()'
+      accept-charset="UTF-8"
+    >
+      <!-- Do not remove this code. -->
+      <input
+        type="text"
+        style="display: none"
+        name="xnQsjsdp"
+        value="884ae702729070db4b063fa28515061f6ea6f09a0605cf71bcbe670211e1e246"
+      />
+      <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+      <input
+        type="text"
+        style="display: none"
+        name="xmIwtLD"
+        value="ba8c195357bb7690e47a11f5f5841790e59ecf73fbce42f690aaafaba6e4b30b2c1047498847405b637ff43fd000e2aa"
+      />
+      <input
+        type="text"
+        style="display: none"
+        name="actionType"
+        value="Q29udGFjdHM="
+      />
+      <input
+        type="text"
+        style="display: none"
+        name="returnURL"
+        value="https&#x3a;&#x2f;&#x2f;valid.health"
+      />
+      <div class="wf-header">Webinar: Sign for Healthcare</div>
+      <div id="elementDiv6126635000000776029" class="wf-form-wrapper">
+        <div class="wf-row">
+          <div class="wf-label">Webinar Date</div>
+          <div class="wf-field">
+            <div class="wf-field-inner">
+              <select
+                name="CONTACTCF5"
+                class="wf-field-item wf-field-dropdown"
+                data-wform-field="select"
+                onchange="removeError(this);"
+              >
+                <option value="-None-">-None-</option>
+                <option value="May&#x20;27th&#x20;-&#x20;9&#x3a;00AM&#x20;CST">
+                  May 27th - 9&#x3a;00AM CST
+                </option>
+                <option value="May&#x20;27th&#x20;-&#x20;3&#x3a;00PM&#x20;CST">
+                  May 27th - 3&#x3a;00PM CST
+                </option>
+                <option value="May&#x20;29th&#x20;-&#x20;10&#x3a;00AM&#x20;CST">
+                  May 29th - 10&#x3a;00AM CST
+                </option>
+                <option value="May&#x20;29th&#x20;-&#x20;4&#x3a;00PM&#x20;CST">
+                  May 29th - 4&#x3a;00PM CST
+                </option>
+                <option value="May&#x20;31st&#x20;-&#x20;11&#x3a;00AM&#x20;CST">
+                  May 31st - 11&#x3a;00AM CST
+                </option>
+                <option value="May&#x20;31st&#x20;-&#x20;1&#x3a;00PM&#x20;CST">
+                  May 31st - 1&#x3a;00PM CST
+                </option>
+                <option value="June&#x20;24th&#x20;-&#x20;9&#x3a;00AM&#x20;CST">
+                  June 24th - 9&#x3a;00AM CST
+                </option>
+                <option value="June&#x20;24th&#x20;-&#x20;3&#x3a;00PM&#x20;CST">
+                  June 24th - 3&#x3a;00PM CST
+                </option>
+                <option
+                  value="June&#x20;26th&#x20;-&#x20;10&#x3a;00AM&#x20;CST"
+                >
+                  June 26th - 10&#x3a;00AM CST
+                </option>
+                <option value="June&#x20;26th&#x20;-&#x20;4&#x3a;00PM&#x20;CST">
+                  June 26th - 4&#x3a;00PM CST
+                </option>
+                <option
+                  value="June&#x20;28th&#x20;-&#x20;11&#x3a;00AM&#x20;CST"
+                >
+                  June 28th - 11&#x3a;00AM CST
+                </option>
+                <option value="June&#x20;28th&#x20;-&#x20;1&#x3a;00PM&#x20;CST">
+                  June 28th - 1&#x3a;00PM CST
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="wf-row">
+          <div class="wf-label">Email</div>
+          <div class="wf-field">
+            <div class="wf-field-inner">
+              <input
+                fvalidate="true"
+                ftype="email"
+                name="Email"
+                maxlength="100"
+                type="text"
+                value=""
+                class="wf-field-item wf-field-input"
+                oninput="removeError(this)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wf-row">
+          <div class="wf-label">First Name</div>
+          <div class="wf-field">
+            <div class="wf-field-inner">
+              <input
+                name="First Name"
+                maxlength="40"
+                type="text"
+                value=""
+                class="wf-field-item wf-field-input"
+                oninput="removeError(this)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wf-row">
+          <div class="wf-label">Last Name</div>
+          <div class="wf-field wf-field-mandatory">
+            <div class="wf-field-inner">
+              <input
+                name="Last Name"
+                maxlength="80"
+                type="text"
+                value=""
+                class="wf-field-item wf-field-input"
+                oninput="removeError(this)"
+              />
+            </div>
+            <div class="wf-field-help-text"></div>
+          </div>
+        </div>
+        <div class="wf-row wf-btn-row">
+          <div class="wf-label" data-ux-empty-label="true"></div>
+          <div class="wform-btn-wrap">
+            <input
+              id="formsubmit"
+              type="submit"
+              class="wf-btn"
+              style="
+                background-color: #1980d8;
+                color: #fff;
+                border: 1px solid #1980d8;
+                width: auto;
+              "
+              value="Submit"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script>
+  var mndFileds = new Array("Last\x20Name");
+  var fldLangVal = new Array("Last Name");
+  var wfInnerWidth = window.innerWidth;
+  if (wfInnerWidth <= 768) {
+    document.forms["BiginWebToRecordForm6126635000000776029"].setAttribute(
+      "data-ux-form-alignment",
+      "top"
+    );
+  }
+  var name = "";
+  var email = "";
+  function removeError(fieldObj) {
+    var parentElement = fieldObj.parentElement.parentElement,
+      childEle = parentElement.getElementsByClassName("wf-field-error")[0];
+    if (childEle) {
+      parentElement.classList.remove("wf-field-error-active");
+      parentElement.removeChild(
+        parentElement.getElementsByClassName("wf-field-error")[0]
+      );
+    }
+  }
+  function setError(fieldObj, label) {
+    var parentElement = fieldObj.parentElement.parentElement,
+      childEle = parentElement.getElementsByClassName("wf-field-error")[0];
+    if (!childEle) {
+      var spanEle = document.createElement("SPAN");
+      spanEle.setAttribute("class", "wf-field-error");
+      spanEle.innerHTML = label;
+      parentElement.append(spanEle);
+      parentElement.classList.add("wf-field-error-active");
+    }
+  }
+  function validateFields6126635000000776029() {
+    var isReturn = true;
+    var form = document.forms["BiginWebToRecordForm6126635000000776029"];
+    var validateFld = form.querySelectorAll("[fvalidate=true]");
+    var i;
+    for (i = 0; i < validateFld.length; i++) {
+      var validateFldVal = validateFld[i].value;
+      if (validateFldVal !== "") {
+        var fLabel =
+          validateFld[
+            i
+          ].parentElement.parentElement.parentElement.getElementsByClassName(
+            "wf-label"
+          )[0].innerHTML;
+        switch (validateFld[i].getAttribute("ftype")) {
+          case "email":
+            if (
+              validateFldVal.match(
+                /^([A-Za-z0-9-._%'+/]+@[A-Za-z0-9.-]+.[a-zA-Z]{2,22})$/
+              ) === null
+            ) {
+              setError(validateFld[i], "Enter valid " + fLabel);
+              isReturn = false;
+            }
+            break;
+          case "number":
+            if (validateFldVal.match(/^[0-9]+$/) === null) {
+              setError(validateFld[i], "Enter valid " + fLabel);
+              isReturn = false;
+            }
+            break;
+          case "double":
+            if (validateFldVal.match(/^[0-9]*(\.[0-9]{0,2})?$/) === null) {
+              setError(validateFld[i], "Enter valid " + fLabel);
+              isReturn = false;
+            }
+            break;
+          case "mobile":
+            if (validateFldVal.match(/^[0-9a-zA-Z+.()\-;\s]+$/) === null) {
+              setError(validateFld[i], "Enter valid " + fLabel);
+              isReturn = false;
+            }
+            break;
+        }
+      }
+    }
+    return isReturn;
+  }
+
+  function checkMandatory6126635000000776029() {
+    var isReturn = true;
+    for (i = 0; i < mndFileds.length; i++) {
+      var fieldObj =
+        document.forms["BiginWebToRecordForm6126635000000776029"][mndFileds[i]];
+      if (fieldObj) {
+        if (fieldObj.value.replace(/^\s+|\s+$/g, "").length == 0) {
+          if (fieldObj.type == "file") {
+            setError(fieldObj, "Please select a file to upload.");
+            isReturn = false;
+          }
+          setError(fieldObj, fldLangVal[i] + " cannot be empty");
+          isReturn = false;
+        } else if (fieldObj.nodeName == "SELECT") {
+          if (fieldObj.options[fieldObj.selectedIndex].value == "-None-") {
+            setError(fieldObj, fldLangVal[i] + " cannot be none.");
+            isReturn = false;
+          }
+        } else if (fieldObj.type == "checkbox") {
+          if (fieldObj.checked == false) {
+            setError(fieldObj, "Please accept  " + fldLangVal[i]);
+            isReturn = false;
+          }
+        }
+      }
+    }
+    if (!validateFields6126635000000776029()) {
+      isReturn = false;
+    }
+    if (!isReturn) {
+      var errEle = document.getElementsByClassName("wf-field-error");
+      if (errEle && errEle.length > 0) {
+        var inputEle = errEle[0].parentElement.getElementsByTagName("input");
+        if (inputEle && inputEle.length == 0) {
+          inputEle = errEle[0].parentElement.getElementsByTagName("select");
+        }
+        if (inputEle && inputEle.length > 0) {
+          inputEle[0].focus();
+        }
+      }
+    }
+    return isReturn;
+  }
+</script>
+<script
+  id="wf_script"
+  src="https://bigin.zoho.com/crm/WebformScriptServlet?rid=ba8c195357bb7690e47a11f5f5841790e59ecf73fbce42f690aaafaba6e4b30b2c1047498847405b637ff43fd000e2aagid884ae702729070db4b063fa28515061f6ea6f09a0605cf71bcbe670211e1e246"
+></script>
