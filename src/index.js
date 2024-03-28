@@ -33,6 +33,7 @@ const App = () => {
         <Route component={Home1} exact path="/user" />
         <Route component={TeamMember} exact path="/team/:name" />
         <Route component={BiginForm} exact path="/form/:form" />
+        <Route component={BiginForm} exact path="/event/:form" />
         <Route component={QrCode} exact path="/code/:name" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
