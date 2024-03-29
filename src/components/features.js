@@ -23,7 +23,7 @@ const Features = (props) => {
                         </span>
                     </div>
                 </div>
-                <div className="home-container10"></div>
+
             </div>
             <div className="home-feature11">
                 <div className="home-container11">
@@ -39,9 +39,7 @@ const Features = (props) => {
                     </span>
                 </div>
             </div>
-            <div className="home-feature12" style={{
-                maxWidth: "100vw"
-            }}>
+            <div className="home-feature12" >
                 <div className="home-container13">
                     <img alt="image" src="/2-300h.png" className="home-image5" />
                 </div>
@@ -55,7 +53,7 @@ const Features = (props) => {
                         and delays associated with manual verification processes.
                     </span>
                 </div>
-            </div>
+            </div >
         </>
     );
 }
