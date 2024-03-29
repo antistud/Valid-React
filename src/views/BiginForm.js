@@ -180,7 +180,7 @@ const BiginForm = (props) => {
                   })}
 
                 </div>
-                <div style={{ fontSize: "small" }}>(recording available after event)</div>
+                {formDetails.dates && (<div style={{ fontSize: "small" }}>(recording available after event)</div>)}
 
                 <br></br>
                 <br className="home-text22"></br>

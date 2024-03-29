@@ -137,7 +137,7 @@ const Home = (props) => {
 
             </span>
             <a
-              href="https://airtable.com/appIYE55j323HkKTI/shr73JZGH9skBDMve"
+              href="/form/waiting-list"
               target="_blank"
               rel="noreferrer noopener"
               className="home-link04"
@@ -223,7 +223,9 @@ const Home = (props) => {
           </div>
           <div className="home-container09">
             <h3 className="home-text30">Built for Confidence</h3>
-            <span className="home-text31">
+            <span className="home-text31" style={{
+              maxWidth: "100vw",
+            }}>
               Unlike other solutions that offer a best guess on coverage, Valid
               offers 100% confidence in your verifications through data that’s
               pulled directly from the payer portal to eliminate any doubt.
@@ -252,7 +254,12 @@ const Home = (props) => {
         </div>
         <div className="home-container14">
           <h3 className="home-text34 Headline3">Real-Time</h3>
-          <span className="home-text35">
+          <span className="home-text35"
+
+            style={{
+              maxWidth: "100vw",
+            }}
+          >
             Real-time verification offers immediate and accurate access to
             patient coverage information, vastly outpacing the inefficiencies
             and delays associated with manual verification processes.
@@ -264,7 +271,10 @@ const Home = (props) => {
           <h2 className="home-text36 Headline2">Get Started</h2>
         </div>
       </div>
-      <div className="home-container16">
+      <div className="home-container16" style={{
+        maxWidth: "100vw",
+        marginLeft: 19
+      }}>
         <a
           href="https://calendly.com/_valid/30min"
           target="_blank"
