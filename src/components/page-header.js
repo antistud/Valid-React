@@ -24,12 +24,15 @@ const PageHeader = (props) => {
             </Helmet>
             <div data-role="Header" className="home-header-container">
                 <header className="home-header">
-                    <div className="home-logo">
-                        <img alt="image" src="/5_crop1-200h.png" className="home-image" />
-                    </div>
+                    <a href="/">
+                        <div className="home-logo" >
+                            <img alt="image" src="/5_crop1-200h.png" className="home-image" />
+                        </div>
+                    </a>
                 </header>
                 <div data-role="MobileMenu" className="home-mobile-menu">
                     <div className="home-top">
+
                         <div className="home-logo1">
                             <img
                                 alt="image"
@@ -37,6 +40,7 @@ const PageHeader = (props) => {
                                 className="home-image1"
                             />
                         </div>
+
                     </div>
                 </div>
             </div>
