@@ -712,7 +712,7 @@
   width: 15px;
   height: 16px;
 }
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .home-hero {
     height: auto;
     flex-direction: column;
@@ -772,7 +772,7 @@
     flex-direction: column;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .home-menu {
     display: none;
   }
@@ -802,7 +802,7 @@
     margin-bottom: var(--dl-space-space-unit);
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .home-header {
     padding-right: 28px;
   }
@@ -919,4 +919,8 @@
     margin-left: 26px;
     margin-right: 20px;
   }
+}
+
+.text-center {
+  text-align: center;
 }

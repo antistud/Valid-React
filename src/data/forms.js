@@ -1,6 +1,6 @@
 const forms = {
     "webinar-sso": {
-        title: ['Webinar:', 'How patient Single Sign On will effect Healthcare'],
+        title: ['Webinar:', 'How Instant-Intake with Single Sign On will effect Healthcare'],
         subtitle: ["Transform Your Patient Care: Discover the Power of Single Sign-On to Elevate Security and Streamline Experience", '',],
         dates: ["May 20th", "11:00am CST"],
         form: "https://us.bigin.online/valid/forms/webinar-sso",
@@ -9,7 +9,7 @@ const forms = {
         cardsSubtitle: "Discover how Valid can revolutionize patient onboarding for your healthcare organization or practice.",
     },
     "webinar-sso": {
-        title: ['Webinar:', 'How patient Instant Check in will effect Healthcare'],
+        title: ['Webinar:', 'How patient Instant-Intake in will effect Healthcare'],
         subtitle: ["Transform Your Patient Care: Discover the Power of Single Sign-On to Elevate Security and Streamline Experience", '',],
         dates: ["May 20th", "11:00am CST"],
         form: "https://us.bigin.online/valid/forms/webinar-sso",
