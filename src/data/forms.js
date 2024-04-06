@@ -24,6 +24,14 @@ const forms = {
         formHeight: 500,
         cardsTitle: "Stay Ahead in Healthcare",
         cardsSubtitle: "Be the first to discover innovative solutions for patient care and data security.",
+    },
+    "contact": {
+        title: ['Contact Us'],
+        subtitle: ["Absolutely! We're thrilled to connect with you."," Here's how you can reach us:","", 'Email: support@valid.care',],
+        form: "https://us.bigin.online/valid/forms/waiting-list",
+        formHeight: 500,
+        cardsTitle: "Stay Ahead in Healthcare",
+        cardsSubtitle: "Be the first to discover innovative solutions for patient care and data security.",
     }
 }
 

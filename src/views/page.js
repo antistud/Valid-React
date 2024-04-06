@@ -40,7 +40,7 @@ const Page = (props) => {
               style={{
                 paddingTop: 20,
               }}
-              dangerouslySetInnerHTML={{ __html: page.page.html }}>
+              dangerouslySetInnerHTML={{ __html: page.page }}>
             </div>
           </div>
         )}

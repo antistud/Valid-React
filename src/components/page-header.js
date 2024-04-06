@@ -15,7 +15,7 @@ const PageHeader = (props) => {
             <>
                 <MenuItem href="/posts" label="Blog" />
                 <MenuItem href="/page/about" label="About" />
-                <MenuItem href="/page/contact" label="Contact" />
+                <MenuItem href="/form/contact" label="Contact" />
                 <ButtonItem href="https://app.valid.care/" label="Login" />
                 <ButtonItem href="/signup" label="Sign Up" backgroundColor="#8C30F5" color="white" />
             </>
@@ -107,7 +107,7 @@ const PageHeader = (props) => {
                                         backgroundColor: "white",
                                     }}>
 
-                                        <MenuItems />
+                                        {/* <MenuItems /> */}
                                     </div>
                                     <div
                                         onClick={() => setShowMenu(false)}
@@ -138,7 +138,7 @@ const PageHeader = (props) => {
                                 display: "flex",
                                 flexWrap: "wrap",
                             }}>
-                                <MenuItems />
+                                {/* <MenuItems /> */}
                             </div></>}
 
                     </div>

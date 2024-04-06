@@ -58,14 +58,11 @@ const GET_POST_BY_SLUG_QUERY = gql`
 const GET_PAGE_BY_SLUG_QUERY = gql`
     query Pages($slug: String!) {
             page(where: {slug:$slug}) {
-                body
                 slug
                 subheader
                 title
                 header
-                page {
-                    html
-                  }
+                page 
               }
             }
     `;
