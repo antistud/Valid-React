@@ -14,6 +14,11 @@ import NotFound from './views/not-found'
 import TeamMember from './views/TeamMember'
 import QrCode from './views/QrCode'
 import BiginForm from './views/BiginForm'
+import Post from './views/post'
+import PostsPage from './views/posts'
+import Page from './views/page'
+import Doc from './views/doc'
+import DocFull from './views/doc_full'
 
 const App = () => {
 
@@ -35,6 +40,11 @@ const App = () => {
         <Route component={BiginForm} exact path="/form/:form" />
         <Route component={BiginForm} exact path="/event/:form" />
         <Route component={QrCode} exact path="/code/:name" />
+        <Route component={Post} path="/post/:name" />
+        <Route component={Page} path="/page/:name" />
+        <Route component={Doc} path="/doc/:name" />
+        <Route component={DocFull} path="/_doc/:name" />
+        <Route component={PostsPage} path="/posts" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>

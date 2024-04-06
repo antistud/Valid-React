@@ -4,6 +4,7 @@ import ValueProps from '../components/value-props';
 import Features from '../components/features';
 import GetStarted from '../components/get-started';
 import SiteFooter from '../components/footer';
+import WebinarBox from '../components/webinar-box';
 
 
 const BasicPageLayout = (props) => {
@@ -11,7 +12,21 @@ const BasicPageLayout = (props) => {
         <>
             <div className="home-container">
                 <PageHeader />
-                {props.children}
+                <div className="home-main">
+                    <div className="home-blur-background"></div>
+                    {props.children}
+                    <img
+                        alt="image"
+                        src="/turquoise-circle.svg"
+                        className="home-turquoise-cirble"
+                    />
+                    <img
+                        alt="image"
+                        src="/purple-circle.svg"
+                        className="home-purple-circle"
+                    />
+                </div>
+                <WebinarBox />
                 <ValueProps title={props?.cardsTitle} subtitle={props?.cardsSubtitle} />
                 <Features />
                 <GetStarted />
@@ -21,5 +36,33 @@ const BasicPageLayout = (props) => {
     );
 }
 
+const BlogPageLayout = (props) => {
+    return (
+        <>
+            <div className="home-container">
+                <PageHeader />
+                <div className="home-main">
+                    <div className="home-blur-background"></div>
+                    {props.children}
+                    <img
+                        alt="image"
+                        src="/turquoise-circle.svg"
+                        className="home-turquoise-cirble"
+                    />
+                    <img
+                        alt="image"
+                        src="/purple-circle.svg"
+                        className="home-purple-circle"
+                    />
+                </div>
+                <WebinarBox />
+                <GetStarted />
+                <SiteFooter />
+            </div>
+        </>
+    );
+}
+
 
 export default BasicPageLayout;
+export { BlogPageLayout };
