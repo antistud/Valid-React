@@ -19,6 +19,7 @@ import PostsPage from './views/posts'
 import Page from './views/page'
 import Doc from './views/doc'
 import DocFull from './views/doc_full'
+import Pricing from './views/pricing'
 
 const App = () => {
 
@@ -45,6 +46,8 @@ const App = () => {
         <Route component={Doc} path="/doc/:name" />
         <Route component={DocFull} path="/_doc/:name" />
         <Route component={PostsPage} path="/posts" />
+        <Route component={Pricing} path="/sign-up" />
+        <Route component={Pricing} path="/pricing" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
