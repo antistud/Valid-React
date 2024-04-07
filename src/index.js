@@ -20,6 +20,7 @@ import Page from './views/page'
 import Doc from './views/doc'
 import DocFull from './views/doc_full'
 import Pricing from './views/pricing'
+import About from './views/about'
 
 const App = () => {
 
@@ -43,6 +44,7 @@ const App = () => {
         <Route component={QrCode} exact path="/code/:name" />
         <Route component={Post} path="/post/:name" />
         <Route component={Page} path="/page/:name" />
+        <Route component={About} path="/about" />
         <Route component={Doc} path="/doc/:name" />
         <Route component={DocFull} path="/_doc/:name" />
         <Route component={PostsPage} path="/posts" />
