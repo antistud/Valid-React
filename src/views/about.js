@@ -17,13 +17,13 @@ const About = (props) => {
         style={{
           zIndex: 100,
           width: "100%",
-          maxWidth: 1050,
+          maxWidth: 900,
           minHeight: 600,
           paddingBottom: 200,
         }}
       >
         <div>
-          <div style={{ padding: 80 }}>
+          <div style={{ padding: 40 }}>
             <div style={{ fontWeight: 700, fontSize: 54 }}>About Valid</div>
             <div style={{ maxWidth: 500 }}>
               At Valid, our core commitment is to redefine the healthcare
@@ -38,21 +38,20 @@ const About = (props) => {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              padding: 80,
+              padding: 40,
               backgroundColor: "#eee",
               marginTop: 0,
-              borderRadius: 10,
             }}
           >
-            <div style={{ flex: 1, minWidth: 400 }}>
+            <div style={{ flex: 1, minWidth: 200 }}>
               <div
                 style={{
                   backgroundImage:
                     "url(https://us-east-1-shared-usea1-02.graphassets.com/clulby54r00av07lh1umf40ff/cluop5q7gmqf207k4j8248t40)",
                   backgroundSize: "cover",
                   height: 260,
-
-                  width: "80%",
+                  maxWidth: 300,
+                  width: "100%",
                   borderRadius: 10,
                   marginLeft: "auto",
                   marginRight: "auto",
@@ -73,7 +72,7 @@ const About = (props) => {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              padding: 80,
+              padding: 40,
             }}
           >
             <div style={{ flex: 1, padding: 10 }}>
@@ -103,10 +102,12 @@ const About = (props) => {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              padding: 80,
+              padding: 40,
               backgroundColor: "#181920",
               marginTop: 80,
               color: "#eee",
+              marginLeft: "auto",
+              marginRight: "auto",
             }}
           >
             <div style={{ flex: 1, padding: 10 }}>
