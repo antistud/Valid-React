@@ -50,7 +50,8 @@ const About = (props) => {
                     "url(https://us-east-1-shared-usea1-02.graphassets.com/clulby54r00av07lh1umf40ff/cluop5q7gmqf207k4j8248t40)",
                   backgroundSize: "cover",
                   height: 260,
-                  maxWidth: 300,
+                  maxWidth: 400,
+                  minWidth: 200,
                   width: "100%",
                   borderRadius: 10,
                   marginLeft: "auto",
@@ -58,7 +59,7 @@ const About = (props) => {
                 }}
               ></div>
             </div>
-            <div style={{ flex: 1, padding: 10 }}>
+            <div style={{ flex: 1, padding: 10, minWidth: 300 }}>
               <div style={{ fontWeight: 700, fontSize: 34 }}>Our Vision</div>
               We envision a future where healthcare providers can focus their
               time and resources on delivering exceptional patient care rather
