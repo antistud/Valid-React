@@ -40,7 +40,7 @@ const About = (props) => {
               flexWrap: "wrap",
               padding: 80,
               backgroundColor: "#eee",
-              marginTop: 80,
+              marginTop: 0,
               borderRadius: 10,
             }}
           >
