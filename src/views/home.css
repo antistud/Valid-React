@@ -582,7 +582,6 @@
   text-align: center;
   font-weight: 600;
   border-width: 0px;
-  margin-right: 50px;
   border-radius: var(--dl-radius-radius-radius8);
   text-decoration: none;
   background-color: #8c30f5;
@@ -593,7 +592,7 @@
   font-style: normal;
   text-align: center;
   font-weight: 600;
-  margin-left: 50px;
+
   border-width: 0px;
   border-radius: var(--dl-radius-radius-radius8);
   text-decoration: none;
@@ -924,100 +923,100 @@
 .text-center {
   text-align: center;
 }
-.padding-20{
+.padding-20 {
   padding: 20px;
 }
 
-.padding-top-20{
+.padding-top-20 {
   padding-top: 20px;
 }
-.padding-bottom-20{
+.padding-bottom-20 {
   padding-bottom: 20px;
 }
-.padding-left-20{
+.padding-left-20 {
   padding-left: 20px;
 }
-.padding-right-20{
+.padding-right-20 {
   padding-right: 20px;
 }
-.padding-x-20{
+.padding-x-20 {
   padding-left: 20px;
   padding-right: 20px;
 }
-.padding-y-20{
+.padding-y-20 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.padding-40{
+.padding-40 {
   padding: 40px;
 }
-.padding-top-40{
+.padding-top-40 {
   padding-top: 40px;
 }
-.padding-bottom-40{
+.padding-bottom-40 {
   padding-bottom: 40px;
 }
-.padding-left-40{
+.padding-left-40 {
   padding-left: 40px;
 }
-.padding-right-40{
+.padding-right-40 {
   padding-right: 40px;
 }
-.padding-x-40{
+.padding-x-40 {
   padding-left: 40px;
   padding-right: 40px;
 }
-.padding-y-40{
+.padding-y-40 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.padding-60{
+.padding-60 {
   padding: 60px;
 }
-.padding-top-60{
+.padding-top-60 {
   padding-top: 60px;
 }
-.padding-bottom-60{
+.padding-bottom-60 {
   padding-bottom: 60px;
 }
-.padding-left-60{
+.padding-left-60 {
   padding-left: 60px;
 }
-.padding-right-60{
+.padding-right-60 {
   padding-right: 60px;
 }
-.padding-x-60{
+.padding-x-60 {
   padding-left: 60px;
   padding-right: 60px;
 }
-.padding-y-60{
+.padding-y-60 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.padding-80{
+.padding-80 {
   padding: 80px;
 }
-.padding-top-80{
+.padding-top-80 {
   padding-top: 80px;
 }
-.padding-bottom-80{
+.padding-bottom-80 {
   padding-bottom: 80px;
 }
-.padding-left-80{
+.padding-left-80 {
   padding-left: 80px;
 }
-.padding-right-80{
+.padding-right-80 {
   padding-right: 80px;
 }
-.padding-x-80{
+.padding-x-80 {
   padding-left: 80px;
   padding-right: 80px;
 }
-.padding-y-80{
+.padding-y-80 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.vision-image{
+.vision-image {
   margin: 10px;
   border-radius: 40px;
   width: 300px;
@@ -1027,7 +1026,7 @@
   margin-right: auto;
 }
 
-.member-image{
+.member-image {
   margin: 10px;
   border-radius: 40px;
   overflow: hidden;
