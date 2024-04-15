@@ -12,7 +12,7 @@ const PageHeader = (props) => {
   function MenuItems() {
     return (
       <>
-        {/* <MenuItem href="/posts" label="Blog" /> */}
+        <MenuItem href="/posts" label="Blog" />
         <MenuItem href="/about" label="About" />
         <MenuItem href="/form/contact" label="Contact" />
         <ButtonItem href="https://app.valid.care/" label="Login" />
