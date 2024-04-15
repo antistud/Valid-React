@@ -21,7 +21,12 @@ const PostsPage = (props) => {
   function PostCard(props) {
     return (
       <div
-        style={{ display: "flex", cursor: "pointer" }}
+        style={{
+          display: "flex",
+          cursor: "pointer",
+          flexWrap: "wrap",
+          marginBottom: 60,
+        }}
         onClick={() => {
           window.location.href = `/post/${props.post.slug}`;
         }}
@@ -29,13 +34,16 @@ const PostsPage = (props) => {
         <div
           style={{
             borderRadius: "10px",
-            border: "1px solid black",
+            border: "2px solid black",
+            borderBottom: "6px solid black",
+            borderLeft: "4px solid black",
             marginLeft: "auto",
             marginRight: "auto",
             overflow: "hidden",
             boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.15)",
-            marginBottom: 40,
+            marginBottom: 20,
             overflow: "hidden",
+            height: 200,
           }}
         >
           <div
@@ -71,7 +79,7 @@ const PostsPage = (props) => {
             style={{
               fontWeight: 400,
               fontSize: 34,
-              paddingLeft: 18,
+              paddingLeft: 0,
             }}
           >
             {props.post.title}
@@ -91,6 +99,7 @@ const PostsPage = (props) => {
             style={{
               fontWeight: 400,
               fontSize: 16,
+              marginBottom: 80,
             }}
           >
             {props.post.subtitle}
@@ -126,9 +135,7 @@ const PostsPage = (props) => {
           flex: 1,
         }}
       >
-        <div
-          style={{ flex: 1, minWidth: 300, paddingTop: 60, paddingLeft: 40 }}
-        >
+        <div style={{ flex: 1, minWidth: 300, paddingTop: 60, padding: 5 }}>
           <div
             style={{
               fontWeight: 900,
