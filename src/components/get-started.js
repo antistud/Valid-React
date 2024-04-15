@@ -37,14 +37,12 @@ const GetStarted = (props) => {
         <div>
           <a
             href={
-              props.care == true
-                ? "/patient"
-                : "https://calendly.com/_valid/30min"
+              props.care == true ? "/user" : "https://calendly.com/_valid/30min"
             }
             rel="noreferrer noopener"
             className="home-link06 button"
           >
-            Patient
+            Developer
           </a>
         </div>
       </div>
