@@ -5,6 +5,11 @@ import PropTypes from "prop-types";
 import "./feature-card.css";
 
 const GetStarted = (props) => {
+  let route =
+    window.location.includes("/user") == true
+      ? "/user"
+      : "https://calendly.com/_valid/30min";
+
   return (
     <>
       <div>
@@ -23,11 +28,7 @@ const GetStarted = (props) => {
       >
         <div>
           <a
-            href={
-              props.care == true
-                ? "https://calendly.com/_valid/30min"
-                : "/provider"
-            }
+            href={"https://calendly.com/_valid/30min"}
             rel="noreferrer noopener"
             className="home-link05 button"
           >
@@ -36,9 +37,7 @@ const GetStarted = (props) => {
         </div>
         <div>
           <a
-            href={
-              props.care == true ? "/user" : "https://calendly.com/_valid/30min"
-            }
+            href={"https://calendly.com/_valid/30min"}
             rel="noreferrer noopener"
             className="home-link06 button"
           >
