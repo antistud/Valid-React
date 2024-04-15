@@ -23,9 +23,9 @@ const Home = (props) => {
             </span>
           </p>
           <b>Instant Checkin for patients</b>
-          Patient have one password for all of their <br />
-          healthcare apps and you have instant, <br />
-          accurate, and verified patient information
+          Patients can use a single password <br />
+          for all their healthcare apps, allowing <br />
+          instant access to accurate and verified information.
           <span className="home-text15">
             <br></br>
 
