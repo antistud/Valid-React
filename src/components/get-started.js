@@ -5,11 +5,6 @@ import PropTypes from "prop-types";
 import "./feature-card.css";
 
 const GetStarted = (props) => {
-  let route =
-    window.location.includes("/user") == true
-      ? "/user"
-      : "https://calendly.com/_valid/30min";
-
   return (
     <>
       <div>
