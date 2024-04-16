@@ -28,7 +28,6 @@ const Home = (props) => {
           instant access to accurate and verified information.
           <span className="home-text15">
             <br></br>
-
             <br className="home-text22"></br>
           </span>
           <a
