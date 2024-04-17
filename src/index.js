@@ -21,6 +21,7 @@ import Doc from "./views/doc";
 import DocFull from "./views/doc_full";
 import Pricing from "./views/pricing";
 import About from "./views/about";
+import KlaviyoForm from "./views/KlaviyoForm";
 
 const App = () => {
   let hostname = window.location.hostname;
@@ -37,10 +38,13 @@ const App = () => {
         <Route component={Home1} exact path="/auth" />
         <Route component={Home1} exact path="/patient" />
         <Route component={Home1} exact path="/user" />
+        <Route component={Home1} exact path="/join" />
         <Route component={Home} exact path="/provider" />
         <Route component={TeamMember} exact path="/team/:name" />
         <Route component={BiginForm} exact path="/form/:form" />
         <Route component={BiginForm} exact path="/event/:form" />
+        <Route component={KlaviyoForm} exact path="/forms/:form" />
+        <Route component={KlaviyoForm} exact path="/events/:form" />
         <Route component={QrCode} exact path="/code/:name" />
         <Route component={Post} path="/post/:name" />
         <Route component={Page} path="/page/:name" />

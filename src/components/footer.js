@@ -11,6 +11,7 @@ const SiteFooter = (props) => {
         <MenuItem href="/posts" label="Blog" />
         <MenuItem href="/about" label="About" />
         <MenuItem href="/form/contact" label="Contact" />
+        <MenuItem href="/join" label="Join The Team" />
       </>
     );
   }
