@@ -29,7 +29,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        {!hostname.includes("valid.health") ? (
+        {!hostname.includes("valid.health") ||
+        !hostname.includes("login.health") ? (
           <Route component={Home} exact path="/" />
         ) : (
           <Route component={Home1} exact path="/" />
