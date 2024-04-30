@@ -9,6 +9,12 @@ import { Helmet } from "react-helmet";
 const PageHeader = (props) => {
   const [showMenu, setShowMenu] = React.useState(false);
 
+  let header_img = "/5_crop1-200h.png";
+  // if host is login.health
+  if (window.location.host.includes("login.health")) {
+    header_img = "/loginhealth-3.png";
+  }
+
   function MenuItems() {
     return (
       <>
@@ -108,11 +114,7 @@ const PageHeader = (props) => {
             <div style={{ flex: 1 }}>
               <a href="/">
                 <div className="home-logo">
-                  <img
-                    alt="image"
-                    src="/5_crop1-200h.png"
-                    className="home-image"
-                  />
+                  <img alt="image" src={header_img} className="home-image" />
                 </div>
               </a>
             </div>
