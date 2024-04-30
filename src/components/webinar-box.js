@@ -18,6 +18,7 @@ const WebinarBox = (props) => {
           width: "100%",
           maxWidth: 600,
           height: 300,
+          zIndex: 999999,
         }}
       >
         <iframe

@@ -55,7 +55,6 @@ const BlogPageLayout = (props) => {
             className="home-purple-circle"
           />
         </div>
-        <WebinarBox />
         <GetStarted />
         <SiteFooter />
       </div>
