@@ -11,7 +11,7 @@ const PageHeader = (props) => {
 
   let header_img = "/5_crop1-200h.png";
   // if host is login.health
-  if (!window.location.host.includes("login.health")) {
+  if (window.location.host.includes("login.health")) {
     header_img = "/loginhealth-3.png";
   }
 
