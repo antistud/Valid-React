@@ -23,13 +23,9 @@ const Home = (props) => {
       <div className="home-hero">
         <div className="home-container07">
           <p className="home-text06">
-            <span>
-              {" "}
-              One login for all <br />
-              healthcare
-            </span>
+            <span> Your login to healthcare</span>
           </p>
-          <b>Instant Checkin for patients</b>
+          <b>Instant Check-in for patients</b>
           Patients can use a single password <br />
           for all their healthcare apps, allowing <br />
           instant access to accurate and verified information.
