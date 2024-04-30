@@ -17,7 +17,11 @@ const PageHeader = (props) => {
         <MenuItem href="/posts" label="Blog" />
         <ButtonItem href="https://app.valid.care/" label="Login" />
         <ButtonItem
-          href="https://buy.stripe.com/7sI16Z7qY1JE7Go5kk"
+          onClick={() => {
+            window._klOnsite = window._klOnsite || [];
+            window._klOnsite.push(["openForm", "TeJgbe"]);
+          }}
+          href="#"
           label="Sign Up"
           backgroundColor="#8C30F5"
           color="white"
@@ -42,11 +46,16 @@ const PageHeader = (props) => {
     );
   }
 
-  function ButtonItem({ href, label, color, backgroundColor }) {
+  function ButtonItem({ href, label, color, backgroundColor, onClick }) {
     let selected = window.location.pathname.includes(href);
 
     return (
       <div
+        onClick={() => {
+          if (onClick) {
+            onClick();
+          }
+        }}
         style={{
           padding: "8px 12px",
           minWidth: 60,
