@@ -1,14 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import PrimaryButton from '../components/primary-button'
-import './home.css'
-import BasicPageLayout from '../layouts/basic-page'
+import PrimaryButton from "../components/primary-button";
+import "./home.css";
+import BasicPageLayout from "../layouts/basic-page";
 
 const Home = (props) => {
   return (
-    <BasicPageLayout cardsTitle="Insurance Done Better" cardsSubtitle="Discover how Valid can revolutionize insurance verification for your healthcare organization or practice.">
+    <BasicPageLayout
+      cardsTitle="Instant Check-in"
+      cardsSubtitle="Discover how Valid can revolutionize patient information for your healthcare organization or practice."
+    >
       <div className="home-hero">
         <div className="home-container07">
           <p className="home-text06">
@@ -18,33 +21,27 @@ const Home = (props) => {
             <span>
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
-            <span>the cost of</span>
+            <span>the cost of invalid</span>
             <br></br>
-            <span>denied insurance</span>
+            <span> patient information</span>
             <br></br>
           </p>
           <span className="home-text15">
             <span className="home-text16">
-              Real-time insurance verification
+              Instant verified patient information
             </span>
             <br></br>
             <span className="home-text18">Valid </span>
-            <span className="home-text19">accelerates insurance by</span>
+            <span className="home-text19">accelerates intake by</span>
             <br className="home-text20"></br>
             <span className="home-text21">
-              eliminating the threat of denied claims
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
+              eliminating patient info re-entry
             </span>
             <br className="home-text22"></br>
-            <span className="home-text23">for care providers</span>
             <br className="home-text24"></br>
             <br></br>
           </span>
@@ -55,16 +52,15 @@ const Home = (props) => {
             className="home-link04"
           >
             <PrimaryButton
-              button="Get Started"
+              button="Setup a Demo"
               className="home-component"
             ></PrimaryButton>
           </a>
         </div>
         <img alt="image" src="/22-400w.png" className="home-image2" />
       </div>
-
     </BasicPageLayout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

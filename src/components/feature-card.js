@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './feature-card.css'
+import "./feature-card.css";
 
 const FeatureCard = (props) => {
   return (
-    <div className={`feature-card-container ${props.rootClassName} `}>
+    <div
+      style={{ paddingTop: 50 }}
+      className={`feature-card-container ${props.rootClassName} `}
+    >
       <img
         alt={props.image_alt}
         src={props.image_src}
@@ -15,16 +18,16 @@ const FeatureCard = (props) => {
       <h5 className="feature-card-text Headline5">{props.card_title}</h5>
       <span className="feature-card-text1">{props.text}</span>
     </div>
-  )
-}
+  );
+};
 
 FeatureCard.defaultProps = {
-  card_title: 'Title',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
-  image_src: '/01.svg',
-  rootClassName: '',
-  image_alt: 'image',
-}
+  card_title: "Title",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.",
+  image_src: "/01.svg",
+  rootClassName: "",
+  image_alt: "image",
+};
 
 FeatureCard.propTypes = {
   card_title: PropTypes.string,
@@ -32,6 +35,6 @@ FeatureCard.propTypes = {
   image_src: PropTypes.string,
   rootClassName: PropTypes.string,
   image_alt: PropTypes.string,
-}
+};
 
-export default FeatureCard
+export default FeatureCard;
