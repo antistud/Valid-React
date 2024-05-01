@@ -114,7 +114,12 @@ const PageHeader = (props) => {
             <div style={{ flex: 1 }}>
               <a href="/">
                 <div className="home-logo">
-                  <img alt="image" src={header_img} className="home-image" />
+                  <img
+                    style={{ width: "auto", height: 50 }}
+                    alt="image"
+                    src={header_img}
+                    className="home-image"
+                  />
                 </div>
               </a>
             </div>
