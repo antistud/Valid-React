@@ -22,6 +22,8 @@ import DocFull from "./views/doc_full";
 import Pricing from "./views/pricing";
 import About from "./views/about";
 import KlaviyoForm from "./views/KlaviyoForm";
+import Dataroom from "./views/dataroom";
+import ContactForm from "./views/ContactForm";
 
 const App = () => {
   let hostname = window.location.hostname;
@@ -42,8 +44,8 @@ const App = () => {
         <Route component={Home1} exact path="/join" />
         <Route component={Home} exact path="/provider" />
         <Route component={TeamMember} exact path="/team/:name" />
-        <Route component={BiginForm} exact path="/form/:form" />
-        <Route component={BiginForm} exact path="/event/:form" />
+        <Route component={ContactForm} exact path="/form/:form" />
+        <Route component={ContactForm} exact path="/event/:form" />
         <Route component={KlaviyoForm} exact path="/forms/:form" />
         <Route component={KlaviyoForm} exact path="/events/:form" />
         <Route component={QrCode} exact path="/code/:name" />
@@ -55,6 +57,7 @@ const App = () => {
         <Route component={PostsPage} path="/posts" />
         <Route component={Pricing} path="/sign-up" />
         <Route component={Pricing} path="/pricing" />
+        <Route component={Dataroom} path="/data-room" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>

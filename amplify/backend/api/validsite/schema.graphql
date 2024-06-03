@@ -36,10 +36,3 @@ type Doc @model @auth(rules: [{ allow: public, operations: [read] }]) {
   category: String
   code: String
 }
-
-type User @model @auth(rules: [{ allow: public, operations: [read] }]) {
-  id: ID!
-  username: String!
-  role: String
-  email: String
-}

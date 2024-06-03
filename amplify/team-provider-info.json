@@ -17,6 +17,13 @@
       },
       "api": {
         "validsite": {}
+      },
+      "function": {
+        "validsite92d56e6b": {
+          "env": "dev",
+          "deploymentBucketName": "amplify-validsite-dev-60b4f-deployment",
+          "s3Key": "amplify-builds/validsite92d56e6b-4d6a7430424b6e4f7574-build.zip"
+        }
       }
     }
   }
