@@ -22,7 +22,7 @@ const PageHeader = (props) => {
         <MenuItem href="/form/contact" label="Contact" />
         <MenuItem href="/posts" label="Blog" />
         <ButtonItem href="https://app.valid.care/" label="Login" />
-        <ButtonItem
+        {/* <ButtonItem
           onClick={() => {
             window._klOnsite = window._klOnsite || [];
             window._klOnsite.push(["openForm", "TeJgbe"]);
@@ -31,7 +31,7 @@ const PageHeader = (props) => {
           label="Sign Up"
           backgroundColor="#8C30F5"
           color="white"
-        />
+        /> */}
       </>
     );
   }
