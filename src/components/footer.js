@@ -24,12 +24,8 @@ const SiteFooter = (props) => {
       <>
         <ButtonItem href="https://app.valid.care/" label="Login" />
         <ButtonItem
-          onClick={() => {
-            window._klOnsite = window._klOnsite || [];
-            window._klOnsite.push(["openForm", "TeJgbe"]);
-          }}
-          href="#"
-          label="Sign Up"
+          href="https://profile.login.health/client/create"
+          label="Creaet Sandbox"
           backgroundColor="#8C30F5"
           color="white"
         />
