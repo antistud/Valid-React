@@ -22,10 +22,22 @@ const Home = (props) => {
       cardsSubtitle="Discover how Valid can revolutionize intake for your healthcare organization or practice."
     >
       <div className="home-hero">
-        <div className="home-container07">
-          <p className="home-text06">
+        <div
+          className="home-container07"
+          style={{
+            maxWidth: "100vw",
+          }}
+        >
+          <div
+            style={{
+              fontSize: 34,
+              fontWeight: 800,
+              lineHeight: 1,
+              paddingBottom: 14,
+            }}
+          >
             <span> Your login to healthcare</span>
-          </p>
+          </div>
           <b>Instant Check-in for patients</b>
           Patients can use a single password <br />
           for all their healthcare apps, allowing <br />

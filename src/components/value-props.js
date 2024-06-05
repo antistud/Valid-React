@@ -8,7 +8,14 @@ import FeatureCard from "./feature-card";
 const ValueProps = (props) => {
   return (
     <>
-      <div className="home-features">
+      <div
+        style={{
+          maxWidth: 1200,
+          marginTop: 60,
+          textAlign: "center",
+          padding: 60,
+        }}
+      >
         <h2 className="Headline2 home-text26">{props?.title}</h2>
         <span className="home-text27">
           <span>{props?.subtitle}</span>
