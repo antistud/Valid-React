@@ -36,6 +36,7 @@ const Features = (props) => {
             justifyContent: "center",
             alignItems: "center",
             flex: 1,
+            textAlign: flexDirection == "row" ? "left" : "right",
           }}
         >
           <h3 className="home-text30">{title}</h3>
@@ -43,6 +44,7 @@ const Features = (props) => {
             className="home-text31"
             style={{
               maxWidth: "100vw",
+              minWidth: 300,
             }}
           >
             {text}
