@@ -6,6 +6,7 @@ import PrimaryButton from "../components/primary-button";
 import FeatureCard from "../components/feature-card";
 import "./home.css";
 import BasicPageLayout from "../layouts/basic-page";
+import SecondaryButton from "../components/secondary-button";
 
 const Home = (props) => {
   useEffect(() => {
@@ -44,6 +45,23 @@ const Home = (props) => {
               className="home-component"
             ></PrimaryButton>
           </a>
+          <div
+            style={{
+              marginTop: 20,
+            }}
+          >
+            <a
+              href="https://profile.login.health/client/create"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-link04"
+            >
+              <SecondaryButton
+                button="Create a Sandbox"
+                className="home-component"
+              ></SecondaryButton>
+            </a>
+          </div>
         </div>
         <img
           alt="image"
