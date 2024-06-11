@@ -17,7 +17,24 @@ const SiteFooter = (props) => {
   }
 
   function MenuItems2() {
-    return <></>;
+    return (
+      <>
+        <div
+          style={{
+            padding: 8,
+            margin: 4,
+            fontWeight: 3000,
+            textAlign: "left",
+          }}
+        >
+          VALID DOT CARE, Inc
+          <br />
+          711 9th st,
+          <br />
+          Aurora, NE 68818
+        </div>
+      </>
+    );
   }
   function MenuItems3() {
     return (
