@@ -10,6 +10,8 @@ const ContactForm = (props) => {
 
   let formDetails = forms[form];
 
+  console.log(formDetails);
+
   return (
     <BasicPageLayout
       cardsTitle={formDetails?.cardsTitle}
@@ -109,13 +111,23 @@ const ContactForm = (props) => {
                 padding: 20,
               }}
             >
-              <HubspotForm
-                portalId="46363409"
-                formId="6e352e52-6be4-4eb8-89af-d426f58d2960"
-                onSubmit={() => console.log("Submit!")}
-                onReady={(form) => console.log("Form ready!")}
-                loading={<div>Loading...</div>}
-              />
+              {form === "waiting-list" ? (
+                <HubspotForm
+                  portalId="46363409"
+                  formId="a48f0407-eca7-4191-a873-8b516eea2a80"
+                  onSubmit={() => console.log("Submit!")}
+                  onReady={(form) => console.log("Form ready!")}
+                  loading={<div>Loading...</div>}
+                />
+              ) : (
+                <HubspotForm
+                  portalId="46363409"
+                  formId="6e352e52-6be4-4eb8-89af-d426f58d2960"
+                  onSubmit={() => console.log("Submit!")}
+                  onReady={(form) => console.log("Form ready!")}
+                  loading={<div>Loading...</div>}
+                />
+              )}
             </div>
           </div>
         </div>
