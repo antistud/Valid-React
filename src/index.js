@@ -24,6 +24,7 @@ import About from "./views/about";
 import KlaviyoForm from "./views/KlaviyoForm";
 import Dataroom from "./views/dataroom";
 import ContactForm from "./views/ContactForm";
+import SuccessLogin from "./views/successlogin";
 
 const App = () => {
   let hostname = window.location.hostname;
@@ -58,6 +59,7 @@ const App = () => {
         <Route component={Pricing} path="/sign-up" />
         <Route component={Pricing} path="/pricing" />
         <Route component={Dataroom} path="/data-room" />
+        <Route component={SuccessLogin} path="/login" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
