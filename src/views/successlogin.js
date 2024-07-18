@@ -47,7 +47,7 @@ const SuccessLogin = (props) => {
         >
           <div>Welcome to the party</div>
           <div style={{ fontSize: 24, fontWeight: "normal", paddingTop: 10 }}>
-            Thank you for test out Login.Health
+            Thank you for checking out Login.Health
           </div>
           <div
             style={{
