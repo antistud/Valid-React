@@ -63,7 +63,7 @@ const Home = (props) => {
             }}
           >
             <a
-              href="https://profile.login.health/client/create"
+              href="https://profile-dev.login.health/client/create"
               target="_blank"
               rel="noreferrer noopener"
               className="home-link04"

@@ -41,7 +41,7 @@ const SiteFooter = (props) => {
       <>
         <ButtonItem href="https://app.valid.care/" label="Login" />
         <ButtonItem
-          href="https://profile.login.health/client/create"
+          href="https://profile-dev.login.health/client/create"
           label="Create Sandbox"
           backgroundColor="#8C30F5"
           color="white"
