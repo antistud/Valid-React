@@ -26,6 +26,7 @@ import Dataroom from "./views/dataroom";
 import ContactForm from "./views/ContactForm";
 import SuccessLogin from "./views/successlogin";
 import Terms from "./views/terms";
+import PrivacyPolicy from "./views/policy";
 
 const App = () => {
   let hostname = window.location.hostname;
@@ -59,6 +60,7 @@ const App = () => {
         <Route component={Terms} path="/terms" />
         <Route component={Terms} path="/tos" />
         <Route component={Terms} path="/tox" />
+        <Route component={PrivacyPolicy} path="/policy" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
