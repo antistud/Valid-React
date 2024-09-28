@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /private/
-Disallow: /tmp/
-Disallow: /cache/
-Sitemap: https://valid.care/sitemap.xml
