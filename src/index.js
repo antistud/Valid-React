@@ -27,6 +27,7 @@ import ContactForm from "./views/ContactForm";
 import SuccessLogin from "./views/successlogin";
 import Terms from "./views/terms";
 import PrivacyPolicy from "./views/policy";
+import Tester from "./views/tester";
 
 const App = () => {
   let hostname = window.location.hostname;
@@ -62,6 +63,7 @@ const App = () => {
         <Route component={Terms} path="/tox" />
         <Route component={PrivacyPolicy} path="/policy" />
         <Route component={PrivacyPolicy} path="/privacy" />
+        <Route component={Tester} path="/test" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
