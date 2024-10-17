@@ -16,7 +16,7 @@ const Tester = () => {
             zIndex: 1,
           }}
         >
-          <h1>Welcome to tester!</h1>
+          <h1>Welcome Tester!</h1>
           <br />
           <br />
           {/* Add your content here */}
