@@ -11,7 +11,8 @@ const Tester = () => {
       >
         <div
           style={{
-            width: 900,
+            width: "100%",
+            maxWidth: 800,
             zIndex: 1,
           }}
         >
